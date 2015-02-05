@@ -1,10 +1,17 @@
-ACTIVITY STUFF
+Angulpifango
 ===============
+The point of this is to be a handy front-end template for building apps using:
+
+* AngularJS
+* Gulp
+* Browserify
+* Django
 
 INSTALL
 --------
 
-Run `npm install` from the directory where this Readme is located. Wait for half the Internet to be downloaded.
+Run `npm install` and then `bower install` from the directory where this Readme is located. Wait for half the Internet to be downloaded.
+
 
 DEVELOP
 --------
