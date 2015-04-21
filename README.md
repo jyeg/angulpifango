@@ -7,6 +7,34 @@ The point of this is to be a handy front-end template for building apps using:
 * Browserify
 * Django
 
+The idea here is to have each mini-angular app (that belongs to a django app) be able to live in isolation but also have access to common libraries. In the following sample django app, this would live in the "app" directory:
+
+```
+root
+|--node_libs                # put global modules here; these should NOT be .gitignore'd
+|--package.json
+|--djangoapp_1
+| |--app
+| | |--bower_components
+| | |--gulpfile.js
+| | |--node_modules			 # standard ignored node_modules dir
+| | |--src
+| | | |--modules
+| | | | |--config
+| | | | |--controllers
+| | | | |--directives
+| | | | |--filters
+| | | | |--services
+| | | | |--main.js			 # entry point for the js
+| | | |--partials
+| | | |--index.html         # for local testing outside of django
+| |--migrations
+| |--static
+| |--templates
+|--djangoapp_n
+```
+
+
 INSTALL
 --------
 
@@ -19,7 +47,7 @@ This project uses [Gulp.js](http://gulpjs.com/). To start the dev server, just r
 
 BUILD
 ------
-When you're ready to build the JS file for Django, run `gulp build:django` which will run various tasks and put the resulting JS file into the `static/js` directory.
+When you're ready to build the JS file for Django, run `gulp djangify` which will run various tasks and put the resulting JS file into the `static/js` directory.
 
 NOTES
 ------

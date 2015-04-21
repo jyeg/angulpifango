@@ -16,7 +16,7 @@ global.config = {
       templatesHTML: SRC_FOLDER + '/partials/**/*.html',
       templatesCompiled: TMP_FOLDER,
       livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
-      modules: './' + SRC_FOLDER + '/js/main.js'
+      modules: './' + SRC_FOLDER + '/modules/main.js'
     },
     dest: {
       build: {
@@ -47,7 +47,7 @@ global.config = {
       scripts: 'bundle.min.js'
     },
     templates: {
-      compiled: 'templates.js',
+      compiled: 'partials.js',
       angular: {
         moduleName: 'app.templates',
         prefix: '',

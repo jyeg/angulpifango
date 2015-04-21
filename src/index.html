@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Activity thing</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
     <base href="/">
     <!--styles-->
     <script>
-    var GLOBALS = {};
+    var GLOBALS = {
+        DEBUG: false
+    };
     </script>
 </head>
 
-<body>
-    <div ng-app="MyApp" ng-cloak>
+<body ng-app="MyApp" ng-cloak>
+    <div class="container">
         <div ui-view></div>
     </div>
     <!--scripts-->

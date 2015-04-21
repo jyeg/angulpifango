@@ -1,6 +1,7 @@
 /*jslint node: true */
 'use strict';
 
+module.exports = /*@ngInject*/
 function Routes($stateProvider, $urlRouterProvider, $locationProvider) {
     if(window.history && history.pushState) {
         $locationProvider.html5Mode(true);
@@ -15,4 +16,3 @@ function Routes($stateProvider, $urlRouterProvider, $locationProvider) {
     // For any unmatched url
     $urlRouterProvider.otherwise("/");
 }
-module.exports = Routes;

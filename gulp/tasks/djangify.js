@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 
 module.exports = gulp.task('djangify', ['browserify'], function() {
   gulp.src('./src/js/bundled.js')
