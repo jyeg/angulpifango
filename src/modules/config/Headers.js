@@ -3,7 +3,6 @@
 
 module.exports = /*@ngInject*/
 function Headers($httpProvider) {
-    console.log('well that workd');
     $httpProvider.defaults.xsrfCookieName = 'csrftoken';
     $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
     $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';

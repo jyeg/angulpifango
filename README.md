@@ -28,6 +28,7 @@ root
 | | | | |--main.js			 # entry point for the js
 | | | |--partials
 | | | |--index.html         # for local testing outside of django
+| | |--test
 | |--migrations
 | |--static
 | |--templates

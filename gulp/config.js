@@ -1,6 +1,5 @@
 global.SRC_FOLDER = 'src';
 global.BUILD_FOLDER = 'build';
-global.RELEASE_FOLDER = 'release';
 global.TMP_FOLDER = 'tmp';
 
 global.config = {
@@ -16,7 +15,7 @@ global.config = {
       templatesHTML: SRC_FOLDER + '/partials/**/*.html',
       templatesCompiled: TMP_FOLDER,
       livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
-      modules: './' + SRC_FOLDER + '/modules/main.js'
+      modules: './' + SRC_FOLDER + '/main.js'
     },
     dest: {
       build: {
@@ -26,14 +25,6 @@ global.config = {
         assets: BUILD_FOLDER + '/assets',
         index: BUILD_FOLDER,
         server: BUILD_FOLDER
-      },
-      release: {
-        styles: RELEASE_FOLDER,
-        scripts: RELEASE_FOLDER,
-        images: RELEASE_FOLDER + '/assets/images',
-        assets: RELEASE_FOLDER + '/assets',
-        index: RELEASE_FOLDER,
-        server: RELEASE_FOLDER
       }
     }
   },
@@ -42,8 +33,7 @@ global.config = {
       styles: 'bundle.css',
       scripts: 'bundle.js'
     },
-    release: {
-      styles: 'bundle.min.css',
+    buildMin: {
       scripts: 'bundle.min.js'
     },
     templates: {

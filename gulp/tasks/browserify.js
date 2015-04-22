@@ -4,14 +4,15 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var browserifyShim = require('browserify-shim');
+var ngAnnotate = require('gulp-ng-annotate');
 
-/* runs browserify and publishes to bundled.js */
-module.exports = gulp.task('browserify', ['lint', 'templates'], function() {
+module.exports = gulp.task('browserify', function() {
     return browserify({
         entries: [global.config.paths.src.modules]
     })
       .transform(browserifyShim)
       .bundle()
       .pipe(source(global.config.filenames.build.scripts))
-      .pipe(gulp.dest(config.paths.dest.release.scripts));
+      .pipe(ngAnnotate())
+      .pipe(gulp.dest(config.paths.dest.build.scripts));
 });

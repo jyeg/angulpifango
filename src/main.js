@@ -1,4 +1,5 @@
-require('angular');
+var GLOBALS = GLOBALS || {};
+var angular = require('angular');
 require('angular-ui-router');
 require('angular-bootstrap-npm');
 require('angular-animate');
@@ -6,17 +7,17 @@ require('angular-sanitize');
 require('angular-cookies');
 require('angular-mocks');
 
-var app = angular.module('MyApp', [
+window.app = angular.module('MyApp', [
     'ui.router',
     'ui.bootstrap',
     'ngAnimate',
     'ngSanitize',
     'ngCookies',
-    require('./config').name,
-    require('./services').name,
-    require('./controllers').name,
-    require('./directives').name,
-    require('../../tmp/partials').name
+    require('./modules/config').name,
+    require('./modules/services').name,
+    require('./modules/controllers').name,
+    require('./modules/directives').name,
+    require('../tmp/partials').name
     ])
     .run(function($rootScope, $http, $cookies) {
         $rootScope.GLOBALS = GLOBALS;
@@ -25,6 +26,6 @@ var app = angular.module('MyApp', [
 // only mock the backend if app is set to debug
 if(GLOBALS.DEBUG) {
     angular.module('Mockery', ['ngMockE2E'])
-        .run( require('./server/MockBackend') );
+        .run( require('./modules/server/MockBackend') );
     app.requires.push('Mockery');
 }
