@@ -7,7 +7,7 @@ The point of this is to be a handy front-end template for building apps using:
 * Browserify
 * Django
 
-The idea here is to have each mini-angular app (that belongs to a django app) be able to live in isolation but also have access to common libraries. In the following sample django app, this would live in the "app" directory:
+The idea here is to have each mini-angular app (that belongs to a django app) be able to live in isolation but also have access to common libraries. In the following sample django setup, this project's root would map to the "djangoapp_1" directory:
 
 ```
 root

@@ -1,5 +1,6 @@
 global.SRC_FOLDER = 'src';
 global.BUILD_FOLDER = 'build';
+global.RELEASE_FOLDER = '../static';
 
 global.config = {
   paths: {
@@ -24,6 +25,9 @@ global.config = {
         assets: BUILD_FOLDER + '/assets',
         index: BUILD_FOLDER,
         server: BUILD_FOLDER
+      },
+      release: {
+        scripts: RELEASE_FOLDER
       }
     }
   },

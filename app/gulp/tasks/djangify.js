@@ -8,7 +8,8 @@ module.exports = gulp.task('djangify', function () {
         'clean', 
         [ 'index', 'styles', 'templates', 'assets', 'lint' ],
         'browserify',
-        'minify'
+        'minify',
+        'release'
     );
 });
 
