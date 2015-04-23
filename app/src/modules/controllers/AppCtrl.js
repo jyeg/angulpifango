@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-function AppCtrl($scope, FooService) {
+function AppCtrl($scope, FooService, GLOBALS) {
     var message = 'This is a basic app';
 
     $scope.page = {

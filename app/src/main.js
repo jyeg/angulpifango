@@ -18,10 +18,7 @@ window.app = angular.module('MyApp', [
     require('./modules/controllers').name,
     require('./modules/directives').name,
     require('./modules/partials').name
-    ])
-    .run(function($rootScope, $http, $cookies) {
-        $rootScope.GLOBALS = GLOBALS;
-    });
+    ]);
 
 // only mock the backend if app is set to debug
 if(GLOBALS.DEBUG) {
