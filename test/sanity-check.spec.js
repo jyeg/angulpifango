@@ -12,8 +12,8 @@ describe('AppCtrl', function() {
     $controller = _$controller_;
   }));
 
-  describe('$scope.grade', function() {
-    it('sets the strength to "strong" if the password length is >8 chars', function() {
+  describe('controller is a thing', function() {
+    it('works as expected', function() {
       var $scope = {};
       var controller = $controller('AppCtrl', { $scope: $scope });
       $scope.page = {welcome: 'something'};

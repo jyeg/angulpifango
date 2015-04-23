@@ -7,6 +7,6 @@ var rename = require('gulp-rename');
 module.exports = gulp.task('minify',function() {
   return gulp.src(config.paths.dest.build.scripts + '/' + config.filenames.build.scripts)
     .pipe(uglify())
-    .pipe(rename(config.filenames.buildMin.scripts))
+    .pipe(rename(config.filenames.build.scriptsMin))
     .pipe(gulp.dest(global.config.paths.dest.build.scripts))
 });

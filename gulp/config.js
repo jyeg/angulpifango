@@ -31,10 +31,8 @@ global.config = {
   filenames: {
     build: {
       styles: 'bundle.css',
-      scripts: 'bundle.js'
-    },
-    buildMin: {
-      scripts: 'bundle.min.js'
+      scripts: 'bundle.js',
+      scriptsMin: 'bundle.min.js'
     },
     templates: {
       compiled: 'partials.js',
