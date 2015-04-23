@@ -1,0 +1,1 @@
+# this is only here to reinforce the idea that this directory is  a django app
