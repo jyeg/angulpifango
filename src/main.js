@@ -17,7 +17,7 @@ window.app = angular.module('MyApp', [
     require('./modules/services').name,
     require('./modules/controllers').name,
     require('./modules/directives').name,
-    require('../tmp/partials').name
+    require('./modules/partials').name
     ])
     .run(function($rootScope, $http, $cookies) {
         $rootScope.GLOBALS = GLOBALS;

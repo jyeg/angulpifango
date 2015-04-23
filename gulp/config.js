@@ -1,6 +1,5 @@
 global.SRC_FOLDER = 'src';
 global.BUILD_FOLDER = 'build';
-global.TMP_FOLDER = 'tmp';
 
 global.config = {
   paths: {
@@ -13,7 +12,7 @@ global.config = {
       stylesGlob: SRC_FOLDER + '/styles/**/*.scss',
       templates: SRC_FOLDER + '/partials/**/*.html',
       templatesHTML: SRC_FOLDER + '/partials/**/*.html',
-      templatesCompiled: TMP_FOLDER,
+      templatesCompiled: SRC_FOLDER + '/modules',
       livereload: [BUILD_FOLDER + '/**/*', '!' + BUILD_FOLDER + '/assets/**/*'],
       modules: './' + SRC_FOLDER + '/main.js'
     },
