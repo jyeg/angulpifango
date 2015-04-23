@@ -17,7 +17,7 @@ root
 | |--app
 | | |--bower_components
 | | |--gulpfile.js
-| | |--node_modules			 # standard ignored node_modules dir
+| | |--node_modules          # standard ignored node_modules dir
 | | |--src
 | | | |--modules
 | | | | |--config
@@ -25,9 +25,9 @@ root
 | | | | |--directives
 | | | | |--filters
 | | | | |--services
-| | | | |--main.js			 # entry point for the js
 | | | |--partials
 | | | |--index.html         # for local testing outside of django
+| | | |--main.js			 # entry point for the js
 | | |--test
 | |--migrations
 | |--static
