@@ -1,4 +1,4 @@
-var GLOBALS = GLOBALS || {};
+var GLOBALS = window.GLOBALS || {};
 var angular = require('angular');
 require('angular-ui-router');
 require('angular-bootstrap-npm');
