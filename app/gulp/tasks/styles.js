@@ -11,9 +11,11 @@ function handleError(err) {
 }
 
 module.exports = gulp.task('styles', function () {
-  return gulp.src(config.paths.src.styles)
-    .pipe(sass(/*{sourcemap: true, sourcemapPath: '../src/styles'}*/).on('error', handleError))
-    .pipe(autoprefixer('last 1 version'))
-    .pipe(rename(config.filenames.build.styles))
-    .pipe(gulp.dest(config.paths.dest.build.styles));
+	return sass(config.paths.src.styles) 
+	.on('error', function (err) {
+		console.error('Error!', err.message);
+	})
+	.pipe(autoprefixer('last 1 version'))
+	.pipe(rename(config.filenames.build.styles))
+	.pipe(gulp.dest(config.paths.dest.build.styles));
 });

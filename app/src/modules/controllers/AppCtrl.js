@@ -1,4 +1,5 @@
 'use strict';
+/* global console */
 
 module.exports = /*@ngInject*/
 function AppCtrl($scope, FooService, GLOBALS) {
@@ -14,9 +15,9 @@ function AppCtrl($scope, FooService, GLOBALS) {
 
     $scope.resetMessage = function() {
         $scope.page.welcome = false;
-    }
+    };
     FooService.getFoos()
         .then(function(response) {
             console.log('worked!', response);
         });
-}
+};

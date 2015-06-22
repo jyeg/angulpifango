@@ -7,4 +7,4 @@ function FooService($http, $q, GLOBALS) {
             success: true
         });
     };
-}
+};

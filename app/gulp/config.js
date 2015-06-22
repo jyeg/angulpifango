@@ -8,7 +8,7 @@ global.config = {
       index: SRC_FOLDER + '/index.html',
       assets: [SRC_FOLDER + '/assets/**/*', '!' + SRC_FOLDER + '/assets/images/**/*'],
       images: SRC_FOLDER + '/assets/images/**/*',
-      scripts: SRC_FOLDER + '/js/**/*.js',
+      scripts: SRC_FOLDER + '/modules/**/*.js',
       styles: SRC_FOLDER + '/styles/app.scss',
       stylesGlob: SRC_FOLDER + '/styles/**/*.scss',
       templates: SRC_FOLDER + '/partials/**/*.html',

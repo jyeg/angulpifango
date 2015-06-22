@@ -7,5 +7,5 @@ function CustomDirective() {
         link: function(scope, element, attrs) {
             scope.text = 'This is a custom directive!';
         }
-    }
-}
+    };
+};

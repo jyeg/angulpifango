@@ -15,4 +15,4 @@ function Routes($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // For any unmatched url
     $urlRouterProvider.otherwise("/");
-}
+};
