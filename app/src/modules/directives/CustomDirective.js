@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
 function CustomDirective() {
     return {
         template: '<p>{{text}}</p>',

@@ -1,7 +1,7 @@
 /*jslint node: true */
 'use strict';
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
 function Headers($httpProvider) {
     $httpProvider.defaults.xsrfCookieName = 'csrftoken';
     $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';

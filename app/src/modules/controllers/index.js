@@ -1,6 +1,6 @@
 'use strict';
 /* global angular */
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
   angular.module('app.modules.controllers', [])
     .controller('AppCtrl', require('./AppCtrl'));

@@ -1,7 +1,7 @@
 /*jslint node: true */
 'use strict';
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
 function Routes($stateProvider, $urlRouterProvider, $locationProvider) {
     if(window.history && history.pushState) {
         $locationProvider.html5Mode(true);

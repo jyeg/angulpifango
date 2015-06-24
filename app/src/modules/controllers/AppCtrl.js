@@ -1,7 +1,7 @@
 'use strict';
 /* global console */
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
 function AppCtrl($scope, FooService, GLOBALS) {
     var message = 'This is a basic app';
 

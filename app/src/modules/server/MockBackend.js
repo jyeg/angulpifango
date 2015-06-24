@@ -4,7 +4,7 @@
 
 var urlPkg = require('url');
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
 function MockBackend($httpBackend) {
     // allow partials and calls to real api to pass through
     $httpBackend.whenGET(/^partials/).passThrough();

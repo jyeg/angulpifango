@@ -1,7 +1,7 @@
 'use strict';
 /* global angular */
 
-module.exports = /*@ngInject*/
+module.exports = /* @ngInject */
   angular.module('app.modules.configs', [])
     .config(require('./Routes'))
     .config(require('./Headers'));
