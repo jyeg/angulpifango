@@ -24,6 +24,7 @@ global.config = {
         images: BUILD_FOLDER + '/assets/images',
         assets: BUILD_FOLDER + '/assets',
         index: BUILD_FOLDER,
+        fallback: BUILD_FOLDER + '/index.html',
         server: BUILD_FOLDER
       },
       release: {
