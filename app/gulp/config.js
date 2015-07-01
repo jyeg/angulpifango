@@ -28,7 +28,7 @@ global.config = {
         server: BUILD_FOLDER
       },
       release: {
-        scripts: RELEASE_FOLDER
+        scripts: RELEASE_FOLDER + '/js'
       }
     }
   },
